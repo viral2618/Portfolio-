@@ -4,11 +4,11 @@ export const personalInfo = {
   tagline: 'Next.js · React · TypeScript · Node.js',
   summary:
     'Full Stack Developer with hands-on experience building and deploying scalable web applications using Next.js, React.js, TypeScript, Node.js, MongoDB, and Socket.IO. Skilled in REST API development, real-time systems, authentication, WebRTC, and cloud deployment with Docker, CI/CD, and Railway. Proven track record of delivering 3+ production-ready applications independently.',
-  email: 'viralmakwana.dev@gmail.com',
+  email: 'viralmak32@gmail.com',
   phone: '+91 86573 30457',
   location: 'Mumbai, Maharashtra',
-  github: 'https://github.com/viralmakwana',
-  linkedin: 'https://linkedin.com/in/viralmakwana',
+  github: 'https://github.com/viral2618',
+  linkedin: 'https://www.linkedin.com/in/viral-makwana-26s18v/',
 }
 
 export const skills = [

@@ -7,8 +7,8 @@ const contacts = [
   { icon: Mail, label: 'Email', value: personalInfo.email, href: `mailto:${personalInfo.email}`, color: 'text-violet-400 bg-violet-500/10 border-violet-500/25' },
   { icon: Phone, label: 'Phone', value: personalInfo.phone, href: `tel:${personalInfo.phone}`, color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/25' },
   { icon: MapPin, label: 'Location', value: personalInfo.location, href: '#', color: 'text-amber-400 bg-amber-500/10 border-amber-500/25' },
-  { icon: GitFork, label: 'GitHub', value: 'github.com/viralmakwana', href: personalInfo.github, color: 'text-purple-400 bg-purple-500/10 border-purple-500/25' },
-  { icon: Link2, label: 'LinkedIn', value: 'linkedin.com/in/viralmakwana', href: personalInfo.linkedin, color: 'text-sky-400 bg-sky-500/10 border-sky-500/25' },
+  { icon: GitFork, label: 'GitHub', value: personalInfo.github.replace('https://', ''), href: personalInfo.github, color: 'text-purple-400 bg-purple-500/10 border-purple-500/25' },
+  { icon: Link2, label: 'LinkedIn', value: personalInfo.linkedin.replace('https://', ''), href: personalInfo.linkedin, color: 'text-sky-400 bg-sky-500/10 border-sky-500/25' },
 ]
 
 export default function Contact() {
