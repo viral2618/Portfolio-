@@ -38,13 +38,28 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <motion.span
-            className="text-xl font-black gradient-text cursor-pointer tracking-tight"
+          <motion.div
+            className="cursor-pointer flex items-center gap-2"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            whileHover={{ scale: 1.08 }}
+            whileHover={{ scale: 1.06 }}
           >
-            VM
-          </motion.span>
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGrad" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#7c3aed" />
+                  <stop offset="50%" stopColor="#a855f7" />
+                  <stop offset="100%" stopColor="#06b6d4" />
+                </linearGradient>
+                <linearGradient id="borderGrad" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#7c3aed" stopOpacity="0.8" />
+                  <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.8" />
+                </linearGradient>
+              </defs>
+              <rect x="1" y="1" width="36" height="36" rx="10" fill="rgba(124,58,237,0.12)" stroke="url(#borderGrad)" strokeWidth="1.5" />
+              <text x="19" y="25" textAnchor="middle" fontFamily="Inter, sans-serif" fontWeight="900" fontSize="15" fill="url(#logoGrad)">VM</text>
+            </svg>
+            <span className="text-sm font-bold text-slate-300 hidden sm:block tracking-wide">viral<span className="text-violet-400">.dev</span></span>
+          </motion.div>
 
           {/* Desktop */}
           <ul className="hidden md:flex items-center gap-8">

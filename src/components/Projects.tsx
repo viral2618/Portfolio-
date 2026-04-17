@@ -38,9 +38,9 @@ export default function Projects() {
           initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center justify-center gap-2 mb-12 flex-wrap"
+          className="flex items-center justify-center gap-2 mb-12 px-4"
         >
-          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl glass-bright border border-violet-500/25 text-sm">
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-xl glass-bright border border-violet-500/25 text-sm text-center">
             <KeyRound size={14} className="text-violet-400 shrink-0" />
             <span className="text-slate-400">Access any project with:</span>
             <span className="font-mono text-violet-300 bg-violet-500/10 px-2 py-0.5 rounded border border-violet-500/20">test@yopmail.com</span>
@@ -63,8 +63,8 @@ export default function Projects() {
                 {/* Gradient header bar */}
                 <div className={`h-1.5 w-full bg-gradient-to-r ${project.gradient}`} />
 
-                <div className="p-8">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div className="p-5 sm:p-8">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-6">
                     <div className="flex items-center gap-4">
                       <div className="w-14 h-14 flex items-center justify-center glass-bright rounded-2xl border border-border shrink-0">
                         {(() => { const I = projectIconMap[project.icon]; return I ? <I size={26} className="text-slate-300" /> : null })()}

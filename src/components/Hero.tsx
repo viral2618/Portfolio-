@@ -39,7 +39,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-bright border border-violet-500/30 text-violet-300 text-sm mb-8 shadow-lg shadow-violet-500/10"
         >
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-ring" />
@@ -51,8 +51,8 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-none"
+          transition={{ duration: 0.5, delay: 0.05 }}
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-none"
         >
           <span className="text-white">Hi, I'm </span>
           <span className="gradient-text">{personalInfo.name}</span>
@@ -62,7 +62,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-violet-600/20 to-cyan-600/20 border border-violet-500/25 text-slate-200 text-xl md:text-2xl font-bold mb-4"
         >
           {personalInfo.title}
@@ -72,7 +72,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.15 }}
           className="text-slate-500 text-base mb-3 tracking-wide"
         >
           {personalInfo.tagline}
@@ -82,7 +82,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.35 }}
+          transition={{ delay: 0.2 }}
           className="flex items-center justify-center gap-1.5 text-slate-500 text-sm mb-8"
         >
           <MapPin size={13} className="text-cyan-500" />
@@ -93,7 +93,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           className="max-w-2xl mx-auto text-slate-400 text-base leading-relaxed mb-10"
         >
           {personalInfo.summary}
@@ -103,7 +103,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
           className="flex items-center justify-center gap-8 mb-12"
         >
           {stats.map(({ value, label }, i) => (
@@ -118,14 +118,14 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-4 mb-12"
+          transition={{ duration: 0.4, delay: 0.35 }}
+          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 mb-12 w-full px-4"
         >
           <motion.a
             href={`mailto:${personalInfo.email}`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 text-white rounded-xl font-semibold transition-all shadow-xl shadow-violet-500/30"
+            className="flex items-center gap-2 px-8 py-3.5 w-full sm:w-auto justify-center bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 text-white rounded-xl font-semibold transition-all shadow-xl shadow-violet-500/30"
           >
             <Mail size={17} /> Get In Touch
           </motion.a>
@@ -135,7 +135,7 @@ export default function Hero() {
             rel="noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-8 py-3.5 glass-bright border border-violet-500/30 text-white rounded-xl font-semibold hover:border-violet-400/60 transition-all"
+            className="flex items-center gap-2 px-8 py-3.5 w-full sm:w-auto justify-center glass-bright border border-violet-500/30 text-white rounded-xl font-semibold hover:border-violet-400/60 transition-all"
           >
             <GitFork size={17} /> GitHub
           </motion.a>
@@ -143,7 +143,7 @@ export default function Hero() {
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-8 py-3.5 glass-bright border border-slate-700/60 text-slate-300 rounded-xl font-semibold hover:border-cyan-500/40 hover:text-cyan-300 transition-all"
+            className="flex items-center gap-2 px-8 py-3.5 w-full sm:w-auto justify-center glass-bright border border-slate-700/60 text-slate-300 rounded-xl font-semibold hover:border-cyan-500/40 hover:text-cyan-300 transition-all"
           >
             <Download size={17} /> Resume
           </motion.a>
@@ -153,7 +153,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.4 }}
           className="flex items-center justify-center gap-4 mb-16"
         >
           {[

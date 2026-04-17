@@ -40,11 +40,9 @@ export default function Experience() {
               </div>
 
               <div className="glass-bright rounded-2xl border border-border glow-card overflow-hidden">
-                {/* Top accent bar */}
                 <div className="h-1 w-full bg-gradient-to-r from-violet-600 via-purple-500 to-cyan-500" />
-
-                <div className="p-8">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div className="p-5 sm:p-8">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-6">
                     <div>
                       <h3 className="text-xl font-black text-white mb-1">{job.role}</h3>
                       <p className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 font-bold text-lg">{job.company}</p>
