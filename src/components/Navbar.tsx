@@ -15,8 +15,14 @@ export default function Navbar() {
   }, [])
 
   const scrollTo = (id: string) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })
     setOpen(false)
+    setTimeout(() => {
+      const el = document.getElementById(id.toLowerCase())
+      if (!el) return
+      const offset = 80
+      const top = el.getBoundingClientRect().top + window.scrollY - offset
+      window.scrollTo({ top, behavior: 'smooth' })
+    }, 100)
   }
 
   return (
